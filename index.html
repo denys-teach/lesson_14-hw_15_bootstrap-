@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="container-fluid navbar-expand-lg bg-primary" data-bs-theme="dark">
+
+      <nav class="container navbar">
+
+        <div class="container-fluid">
+          <a class="navbar-brand w-20px" href="#"><img src="assets/images/Logo.jpg" alt="Logo" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Phone</a></li>
+                  <li><a class="dropdown-item" href="#">LapTop</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Lifecell</a></li>
+                  <li><a class="dropdown-item" href="#">Vodafone</a></li>
+                </ul>
+              </li>
+
+            </ul>
+
+            <ul class="navbar-nav me-5 my-2 my-lg-0 navbar-nav-scroll text-bg-secondary rounded-4"
+              style="--bs-scroll-height: 100px;">
+
+              <!--Modal btn-->
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal"
+                  data-bs-target="#Registrarion">Registrarion</a>
+              </li>
+
+
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success bg-dark-subtle rounded-5" type="submit">&#128269;</button>
+            </form>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main container text-center mb-5">
+
+    <div class="row align-items-start">
+
+      <div class="col-xxl-6 col-xl-8 mt-5">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav Left(Carousel) -->
+      <div class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first my-5">
+
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/photo_1_Carousel.png" class="d-block w-100 object-fit-cover"
+                style="height: 500px;" alt="Photos_Carousel">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/Photo_2_Carousel.jpg" class="d-block w-100 object-fit-cover"
+                style="height: 500px;" alt="Photos_Carousel">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/Photo_3_Carousel.jpg" class="d-block w-100 object-fit-cover"
+                style="height: 500px;" alt="Photos_Carousel">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/Photo_4_Carousel.jpg" class="d-block w-100 object-fit-cover"
+                style="height: 500px;" alt="Photos_Carousel">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="col-xxl-3 col-xl-12 col-lg-6 mt-5">
+        <span>Hello FullStack developer!!!</span>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer container-fluid text-bg-info m-auto position-fixed bottom-0">
+    <div class="container py-5 text-center">
+      &#169;Denys Odnosum
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Registrarion" tabindex="-1" aria-labelledby="RegistrarionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="RegistrarionLabel">Registration</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="mb-4">
+              <label class="form-label" for="Login">Login</label>
+              <input class="form-control" type="text" name="Login" id="Login" placeholder="Login">
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <label class="form-label" for="Password">Password</label>
+                <input class="form-control" type="password" name="Password" id="Password" placeholder="Password">
+              </div>
+              <div class="col-lg-6 mb-4">
+                <label class="form-label" for="Password">Confirm Password</label>
+                <input class="form-control" type="password" name="Password" id="Password"
+                  placeholder="Confirm Password">
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label" for="Telephone">Telephone</label>
+              <input class="form-control" type="tel" name="Telephone" id="Telephone" placeholder="Telephone">
+            </div>
+
+            <div class="btns d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-secondary" type="submit">Submit</button>
+              <button class="btn btn-secondary" type="reset">Reset</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
